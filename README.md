@@ -50,7 +50,7 @@ Before running this project, ensure you have the following installed:
     - Create a new MySQL database.
     - Update `application.properties` with your MySQL credentials:
       ```properties
-      spring.datasource.url=jdbc:mysql://localhost:3306/foodfrenzy
+      spring.datasource.url=jdbc:mysql://localhost:3306/Dayalfood
       spring.datasource.username=root
       spring.datasource.password=root
       spring.jpa.hibernate.ddl-auto=update
@@ -72,7 +72,7 @@ Before running this project, ensure you have the following installed:
 src/
 ├── main/
 │   ├── java/
-│   │   └── com.example.foodfrenzy/
+│   │   └── com.example.Dayalfood/
 │   │       ├── controller/      # Contains all controllers
 │   │       ├── model/           # Contains entity classes
 │   │       ├── repository/      # Repository interfaces for database interaction
