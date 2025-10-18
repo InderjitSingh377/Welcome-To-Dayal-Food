@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Admin : Add</title>
+	<link rel="stylesheet" href="" th:href="@{/css/Add_Admin.css}" />
+</head>
+
+<body>
+	<a href="/admin/services">Back to Services</a>
+	<div class="addAdmin">
+		<h3 style="color: red;">ADD NEW ADMIN/PARTNER</h3>
+		<form action="" th:action="@{/addingAdmin}" method="post">
+			Name :
+			<input type="text" name="adminName" placeholder="Enter name..." class="adminName" minlength="2" required>
+			<br />
+
+			Mail-Id :
+			<input type="email" name="adminEmail" placeholder="Enter email..." class="adminEmail" required><br />
+
+
+			Phone-Number :
+			<input type="tel" name="adminNumber" placeholder="Enter 10 digit mobile number..." class="adminNumber"
+				pattern="[0-9]{10}" required /><br />
+
+			Password :
+			<input type="password" name="Password" placeholder="Enter password..." class="Password" 
+			pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,}"
+    title="Must contain at least one number, one uppercase and lowercase letter, one special character, and be at least 8 characters long." required><br />
+    
+
+
+
+		
+			<button type="submit">Add_Admin</button>
+		</form>
+	</div>
+</body>
+
+</html>
